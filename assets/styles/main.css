@@ -1,0 +1,7 @@
+label, small {
+    display: block !important;
+}
+
+.form-group {
+    margin: 10px;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulário de Inscrição</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/styles/main.css'>
+    <script src='scripts/main.js'></script>
+</head>
+<body>
+    <h1>Formulário de Inscrição</h1>
+    <form action="submit" class="form">
+        <div class="form-group">
+            <label for="name">Nome Completo ou Nome Social</label>
+            <input type="text" class="form-control" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" class="form-control" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Telefone/Whatsapp</label>
+            <input type="tel" class="form-control" name="phone" required>
+        </div>
+
+        <div class="form-group">
+            <label for="age">Idade</label>
+            <input type="number" class="form-control" name="age" required>
+        </div>
+
+        <div class="form-group">
+            <label for="scholarity">Escolaridade</label>
+            <select name="scholarity" id="scholarity">
+                <option value="fundamental-incompleto">Fundamental Incompleto</option>
+                <option value="fundamental-completo">Fundamental Completo</option>
+                <option value="medio-incompleto">Médio Incompleto</option>
+                <option value="medio-completo">Médio Completo</option>
+                <option value="superior-incompleto">Superior Incompleto</option>
+                <option value="superior-completo">Superior Completo</option>
+                <option value="pos-graduacao">Pós-graduação</option>
+                <option value="mestrado">Mestrado</option>
+                <option value="doutorado">Doutorado</option>
+                <option value="nao-alfabetizado">Não alfabetizado</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="city">Cidade</label>
+
+<select name="city" id="city" required>
+    <option value="belo-horizonte">Belo Horizonte</option>
+    <option value="contagem">Contagem</option>
+        <option value="betim">Betim</option>
+        <option value="esmeraldas">Esmeraldas</option>
+        <option value="ibirite">Ibirité</option>
+        <option value="nova-lima">Nova Lima</option>
+        <option value="raposos">Raposos</option>
+        <option value="rio-acima">Rio Acima</option>
+        <option value="santa-luzia">Santa Luzia</option>
+        <option value="sabara">Sabará</option>
+        <option value="venda-nova">Venda Nova</option>
+        <option value="vespasiano">Vespasiano</option>
+        <option value="outra">Outra</option>
+    </select>        </div>
+        <div class="form-group">
+            <label for="genre">Identidade de Gênero </label>
+            <select name="genre" id="genre" name="genre" required>
+                <option value="homem-cis">Homem cis</option>
+                <option value="mulher-cis">Mulher cis</option>
+                <option value="homem-trans">Homem trans</option>
+                <option value="mulher-trans">Mulher trans</option>
+                <option value="nao-binario">Não-binário</option>
+                <option value="outro">Outro</option>
+                <option value="nao-informado">Não informado</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="instrument">
+                Qual instrumento você tem?
+            </label>
+            <select name="instrument" id="instrument" required>
+                <option value="violao">Violão</option>
+                <option value="cavaco">Cavaco</option>
+                <option value="guitarra">Guitarra</option>
+                <option value="baixo">Baixo</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="interest">Porque você deseja fazer este curso? Quais são suas expectativas?</label>
+            <textarea name="interest" id="interest" cols="30" rows="10" required onkeyup="counter(this.value, 'interest','interest-counter', 300)"></textarea>
+            <small>
+                <span id="interest-counter">300</span> caracteres restantes.
+
+            </small>
+        </div>
+        <div class="form-group">
+            <label for="experience">Você já tem alguma experiência em música ou artes? Conte-nos um pouco sobre.</label>
+            <textarea name="experience" id="experience" cols="30" rows="10" required onkeyup="counter(this.value, 'experience','experience-counter', 300)"></textarea>
+            <small>
+                <span id="experience-counter">300</span> caracteres restantes.
+
+            </small>
+        </div>
+
+
+    </form>
+</body>
+</html>
